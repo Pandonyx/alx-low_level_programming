@@ -1,0 +1,2 @@
+#!/bin/bash
+CFILE="main.c"; [ -f "$CFILE" ] && gcc -S -masm=intel "$CFILE" -o "${CFILE%.c}.s" && echo "Generated assembly code in file: ${CFILE%.c}.s" || echo "Error: C file $CFILE does not exist."
