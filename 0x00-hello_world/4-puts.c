@@ -1,7 +1,11 @@
 #include <stdio.h>
-
-int main(void)
+/**
+*main - entry point
+*description : print a line "puuts" function
+*return: always 0 (success)
+*/
+int main()
 {
-puts("\"programming is like building a multilingual puzzle");
- return (0);
+  puts("\"programming is like building a multilingual puzzle");
+  return (0);
 }
