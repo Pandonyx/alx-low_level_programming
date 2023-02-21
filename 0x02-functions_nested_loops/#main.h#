@@ -1,24 +1,31 @@
 #ifndef MAIN_H
 #define MAIN_H
 int _putchar(char c);
+int _islower(int c);
+int _isalpha(int c);
+int print_sign(int n);
+int _abs(int n);
+int print_last_digit(int n);
 #include "main.h"
 
 /**
- * _islower - Checks for lowercase character
- * @c: The character to be checked
- *
- * Return: 1 if c is lowercase, 0 otherwise
+ * jack_bauer - Prints every minute of the day of Jack Bauer
  */
-int _islower(int c)
+void jack_bauer(void)
 {
-    /* Check if the character is in the lowercase range (a-z) */
-    if (c >= 'a' && c <= 'z')
+    int hour, minute;
+
+    for (hour = 0; hour < 24; hour++)
     {
-        return (1);
-    }
-    else
-    {
-        return (0);
+        for (minute = 0; minute < 60; minute++)
+        {
+            _putchar('0' + (hour / 10));
+            _putchar('0' + (hour % 10));
+            _putchar(':');
+            _putchar('0' + (minute / 10));
+            _putchar('0' + (minute % 10));
+            _putchar('\n');
+        }
     }
 }
 void print_alphabet(void);
