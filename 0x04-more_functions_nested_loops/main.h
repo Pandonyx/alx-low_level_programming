@@ -1,3 +1,4 @@
+void more_numbers(void);
 int _putchar(char c);
 int mul(int a, int b);
 int _isdigit(int c);
