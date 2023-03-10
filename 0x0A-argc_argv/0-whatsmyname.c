@@ -10,7 +10,7 @@
  **/
 int main(int argc, char *argv[])
 {
-/* prints the name of the program */
+argc = argc; /* prints the name of the program */
 printf("%s\n", argv[0]);
 /* exit with status code 0 */
 return (0);
