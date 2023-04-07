@@ -19,7 +19,7 @@ temp >>= 1;
 } while (temp > 0);
 do {
 shifts--;
-if ((n >> shifts) & 1)
+if ((n >> shifts) &1)
 printf("1");
 else
 printf("0");
