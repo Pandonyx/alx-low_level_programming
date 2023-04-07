@@ -21,6 +21,6 @@ if (b[len] == '1')
 total += power;
 power *= 2;
 }
-while (len > 0)
+while (len > 0);
 return (total);
 }
