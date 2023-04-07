@@ -16,5 +16,5 @@ do {
 hold = n >> index;
 bit_value = hold & 1;
 } while (0);
-return bit_value;
+return (bit_value);
 }
