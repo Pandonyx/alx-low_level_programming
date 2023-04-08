@@ -11,10 +11,11 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 unsigned long int diff = n ^ m;
 unsigned int counter = 0;
 do {
-if (diff & 1) {
+if (diff & 1)
+{
 counter++;
 }
 diff >>= 1;
 } while (diff != 0);
-return counter;
+return (counter);
 }
